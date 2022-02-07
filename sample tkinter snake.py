@@ -16,9 +16,11 @@ class object:
         self.size = 1
         self.colour = (255,0,0)
         self.thickness = 1
+        self.angle = 0
         self.speed_X = 100
         self.speed_Y = 0
-        self.acc_Y = 0
+        self.acc = 0
+        self.acc_angle = 0
 
 
     def display(self):
@@ -42,17 +44,30 @@ class object:
         return self.y
 
 
-def controle(erreur, derive, integrale):
-    coefP = 6
-    coefD = 5
-    
-    coefI = 4
-    
-    P = coefP * erreur
-    I = coefI * integrale
-    D = coefD * derive
-    return (P, I, D)
-    
+
+class PID:
+    def __init__(self,P,I,D):
+        self.P = P
+        self.I = I
+        self.D = D
+        self.posPrecedente = 0
+        self.integrale = 0
+
+    def controle(self, erreur, position):
+        self.integrale += erreur * dt
+        
+        Pcorrect = self.P * erreur
+        Icorrect = self.I * self.integrale
+        Dcorrect = self.D * (position - self.posPrecedente) / dt
+        
+        self.posPrecedente = position
+        return(Pcorrect, Icorrect, Dcorrect)
+        
+
+
+
+
+
 
 
 
@@ -66,10 +81,10 @@ pygame.display.flip()
 
 clock = pygame.time.Clock()
 
-
 position = 0
-erreurPrecedente = 0
-integrale = 0
+
+speedPID = PID(4,0,0)
+
 
 running = True
 while running:
@@ -77,19 +92,14 @@ while running:
     position = particule.getPosition()
 
     erreur = objectif - position
-    derive = (erreur - erreurPrecedente)/dt
-    integrale += erreur * dt
 
-    erreurPrecedente = erreur
-    
-    regulation = controle(erreur, derive, integrale)
-    
-    particule.move(regulation)
+    particule.move(speedPID.controle(erreur, position))
+
     screen.fill(background_colour)
     particule.display()
     pygame.display.flip()
 
-    #clock.tick(fps)
+    clock.tick(fps)
 
 
 
