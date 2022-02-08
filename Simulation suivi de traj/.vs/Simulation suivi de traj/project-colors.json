@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "24349d34-4a6f-4ddb-859d-1a9603798ca0": {
+      "ProjectGuid": "24349d34-4a6f-4ddb-859d-1a9603798ca0",
+      "DisplayName": "Simulation suivi de traj",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

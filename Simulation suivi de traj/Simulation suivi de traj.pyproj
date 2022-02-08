@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>e9fbb04d-8bba-4f5b-8e09-f72c9a21f82c</ProjectGuid>
+    <ProjectGuid>24349d34-4a6f-4ddb-859d-1a9603798ca0</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Simulation_suivi_de_trajectoire.py</StartupFile>
+    <StartupFile>Simulation_suivi_de_traj.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Simulation suivi de trajectoire</Name>
-    <RootNamespace>Simulation suivi de trajectoire</RootNamespace>
+    <Name>Simulation suivi de traj</Name>
+    <RootNamespace>Simulation suivi de traj</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Simulation_suivi_de_trajectoire.py" />
+    <Compile Include="Simulation_suivi_de_traj.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

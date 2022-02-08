@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31112.23
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Simulation suivi de trajectoire", "Simulation suivi de trajectoire\Simulation suivi de trajectoire.pyproj", "{E9FBB04D-8BBA-4F5B-8E09-F72C9A21F82C}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Simulation suivi de traj", "Simulation suivi de traj.pyproj", "{24349D34-4A6F-4DDB-859D-1A9603798CA0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +11,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E9FBB04D-8BBA-4F5B-8E09-F72C9A21F82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9FBB04D-8BBA-4F5B-8E09-F72C9A21F82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24349D34-4A6F-4DDB-859D-1A9603798CA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24349D34-4A6F-4DDB-859D-1A9603798CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8FF1678C-CEDB-4513-BDBC-28B61F9E9216}
+		SolutionGuid = {A32CA50D-12D9-4C08-8655-EA0D6B2BE6C3}
 	EndGlobalSection
 EndGlobal
