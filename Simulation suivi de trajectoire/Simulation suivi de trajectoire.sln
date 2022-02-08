@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Simulation suivi de trajectoire", "Simulation suivi de trajectoire\Simulation suivi de trajectoire.pyproj", "{E9FBB04D-8BBA-4F5B-8E09-F72C9A21F82C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9FBB04D-8BBA-4F5B-8E09-F72C9A21F82C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9FBB04D-8BBA-4F5B-8E09-F72C9A21F82C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8FF1678C-CEDB-4513-BDBC-28B61F9E9216}
+	EndGlobalSection
+EndGlobal
