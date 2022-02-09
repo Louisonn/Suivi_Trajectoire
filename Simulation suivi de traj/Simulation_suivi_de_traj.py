@@ -4,7 +4,7 @@ import math
 background_colour = (255,255,255)
 (width, height) = (1400, 1000)
 objectif = (600, 400)
-startingPoint = (400,400)
+startingPoint = (400,200)
 fps = 100
 
 
@@ -86,7 +86,7 @@ def process(systeme):
         
 
 
-    erreur_angle = math.atan((objectif[1] - actualPosition[1]) /(objectif[0] - actualPosition[0] + 0.01)) - actualAngle + math.pi/2
+    erreur_angle = math.atan2((objectif[1] - actualPosition[1]) ,(objectif[0] - actualPosition[0] + 0.01)) - actualAngle + math.pi/2
     
     systeme.angleCorrection(anglePID.controle(erreur_angle, actualAngle))
 
