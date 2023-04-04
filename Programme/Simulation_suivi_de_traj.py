@@ -53,6 +53,8 @@ class object:
         self.x += deplacement * math.sin(math.pi - self.angle)
         self.y += deplacement * math.cos(math.pi - self.angle)
         
+        
+        
 
     def getPosition(self):
         return (self.x, self.y)
